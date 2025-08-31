@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/277/661/small/studio-empty-background-wall-and-floor-grunge-texture-cement-concrete-display-scene-free-photo.jpg");
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.registration-form{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    padding: 50px;
+    width: 500px;
+    border-radius: 5px;
+
+    form{
+        margin: 20px 0;
+       
+        div.input-group{
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        label, input{
+            display: block;
+            width: 100%;
+        }
+        
+        input {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus{
+            border: 1px solid blue;
+        }
+        
+        input.success{
+            border: 1px solid green;
+        }
+
+        input.error{
+            border: 1px solid red;
+        }
+
+        i{
+            position: absolute;
+            right: 20px;
+            top: 43px;
+        }
+
+        i.error{
+            color: red;
+        }
+
+        i.success{
+            color: green;
+        }
+
+        p.error{
+            color: red;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        button {
+            background-color: purple;
+            padding: 10px 30px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(112, 12, 112);
+        }
+    }
+}
